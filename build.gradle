@@ -7,7 +7,10 @@ buildscript {
         classpath 'com.android.tools.build:gradle:2.2.0-rc2'
     }
 }
-
+plugins{
+   id "com.android.library"
+   id 'maven-publish'
+}
 allprojects {
     repositories {
         jcenter()
@@ -21,15 +24,12 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.z0aiyx.AndroidAudioConverter' 
                 artifactId = 'z0aiyx' 
-                version = '1.0.5'
+                version = '1.0.6'
             }
         }
     }
 }
-plugins{
-   id "com.android.library"
-   id 'maven-publish'
-}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
