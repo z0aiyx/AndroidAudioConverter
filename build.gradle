@@ -23,7 +23,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.z0aiyx.AndroidAudioConverter' 
                 artifactId = 'z0aiyx' 
-                version = '1.0.7'
+                version = '1.0.8'
             }
         }
     }
