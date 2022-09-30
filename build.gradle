@@ -1,7 +1,4 @@
-plugins{
-   id "com.android.library"
-   id 'maven-publish'
-}
+
 buildscript {
     repositories {
         jcenter()
@@ -24,10 +21,14 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.z0aiyx.AndroidAudioConverter' 
                 artifactId = 'z0aiyx' 
-                version = '1.0.4'
+                version = '1.0.5'
             }
         }
     }
+}
+plugins{
+   id "com.android.library"
+   id 'maven-publish'
 }
 task clean(type: Delete) {
     delete rootProject.buildDir
